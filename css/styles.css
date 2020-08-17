@@ -42,6 +42,8 @@
 html {
   font-family: sans-serif;
   line-height: 1.15;
+  /* font-size: 62.5%;  */
+  /* 1 rem = 10px; 10px/16px = 62.5% */
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
@@ -4704,6 +4706,9 @@ a.close.disabled {
 .bg-primary {
   background-color: #0a2239 !important; }
 
+.bg-white {
+  background-color: #fff !important; }
+
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
@@ -5477,7 +5482,9 @@ button.bg-dark:focus {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030; }
+  z-index: 1030; 
+  background: transparent !important;
+}
 
 .fixed-bottom {
   position: fixed;
@@ -7016,6 +7023,9 @@ button.bg-dark:focus {
 .font-weight-normal {
   font-weight: 400 !important; }
 
+.font-weight-normal2 {
+  font-weight: 600 !important; }
+
 .font-weight-bold {
   font-weight: 700 !important; }
 
@@ -7231,17 +7241,19 @@ h3 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: "SB Heading", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700; }
+  font-weight: 700; 
+}
+  
   #mainNav .navbar-brand {
-    color: #fff; }
+    color: #0a2239; }
   #mainNav .navbar-nav {
     margin-top: 1rem; }
     #mainNav .navbar-nav li.nav-item a.nav-link {
-      color: #fff; }
+      color: #0a2239; }
       #mainNav .navbar-nav li.nav-item a.nav-link:hover {
         color: #0a2239; }
       #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-        color: #fff; }
+        color: #0a2239; }
       #mainNav .navbar-nav li.nav-item a.nav-link.active {
         color: #0a2239; }
   #mainNav .navbar-toggler {
@@ -7268,7 +7280,12 @@ h3 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem; }
     #mainNav.navbar-shrink .navbar-brand {
-      font-size: 1.5em; } }
+      font-size: 1.5em; } 
+    }
+
+#mainNav.navbar-shrink {
+  background: #fff !important;
+}
 
 .masthead {
   padding-top: calc(6rem + 74px);
@@ -7279,6 +7296,10 @@ h3 {
   .masthead .masthead-subheading {
     font-size: 1.25rem; }
   .masthead .masthead-avatar {
+    border: 1.3px solid #0a2239;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
     width: 15rem; }
 
 @media (min-width: 992px) {
