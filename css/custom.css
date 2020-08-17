@@ -123,7 +123,7 @@
   background-image: linear-gradient(to right bottom, #D5522D, #FF0000), url(../assets/img/nat-7.jpg); }
 
 .card__heading {
-  font-size: 30px;
+  font-size: 28.5px;
   font-weight: 300;
   text-transform: uppercase;
   text-align: right;
@@ -135,7 +135,7 @@
 
 .card__heading-span {
   padding: 7px 12px;
-  line-height: 190%;
+  line-height: 180%;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone; }
   
@@ -256,14 +256,46 @@
 .btn2--white {
   background-color: #fff;
   color: #777; }
-  .btn2--white::after {
-    background-color: #fff; }
+.btn2--white::after {
+  background-color: #fff; }
 
 .btn2--green {
   background-color: #55c57a;
   color: #fff; }
-  .btn2--green::after {
-    background-color: #55c57a; }
+.btn2--green::after {
+  background-color: #55c57a; }
+
+.btn2--orange {
+  background-color: #ffb900;
+  color: #fff; }
+.btn2--orange::after {
+  background-color: #ffb900; }
+
+
+.btn2--blue {
+  background-color: #2998ff;
+  color: #fff; }
+.btn2--blue::after {
+  background-color: #2998ff; }
+
+.btn2--darkblue {
+  background-color: #04467F;
+  color: #fff; }
+.btn2--darkblue::after {
+  background-color: #04467F; }
+  
+.btn2--gold {
+  background-color: #F0B00E;
+  color: #fff; }
+.btn2--gold::after {
+  background-color: #F0B00E; }
+
+.btn2--red {
+  background-color: #FF0000;
+  color: #fff; }
+.btn2--red::after {
+  background-color: #FF0000; }
+
 
 .btn2::after {
   content: "";
@@ -345,19 +377,21 @@
   .popup__img {
     display: block;
     width: 100%; }
+
   .popup__text {
     font-size: 14px;
-    margin-bottom: 40px;
-    -moz-column-count: 2;
+    margin-bottom: 20px;
+    /* -moz-column-count: 2;
     -moz-column-gap: 40px;
     -moz-column-rule: 1px solid #eee;
     column-count: 2;
     column-gap: 40px;
-    column-rule: 1px solid #eee;
+    column-rule: 1px solid #eee; */
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -375,4 +409,4 @@
     transition: all .2s;
     line-height: 1; }
   .popup__close:hover {
-    color: #55c57a; }
+    color: black; }
