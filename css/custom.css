@@ -34,8 +34,8 @@
   margin-top: -5rem;
   position: relative;
 
-  -webkit-clip-path: polygon(0 160px, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 160px, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 180px, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 180px, 100% 0, 100% 100%, 0 100%);
 }
 
 
@@ -258,7 +258,24 @@
   position: relative;
   font-size: 16px;
   border: none;
-  cursor: pointer; }
+  cursor: pointer; 
+  margin-top: 5px;
+  text-align: center; 
+  /* margin: auto; */
+  width: 260px;
+}
+/* @media only screen and (max-width: 500px) {
+  .btn2, .btn2:link, .btn2:visited {
+    padding: 10px 25px;
+    margin-left: 35px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .btn2, .btn2:link, .btn2:visited {
+    padding: 10px 25px;
+    margin-left: 10px;
+  }
+} */
 
 .btn2:hover {
   transform: translateY(-3px);
@@ -400,26 +417,36 @@
   transform: translate(-50%, -50%) scale(0.25);
   transition: all .5s .2s; }
 .popup__left {
-  width: 33.333333%;
+  width: 35%;
   display: table-cell; }
+
+@media only screen and (max-width: 1400px) {
+  .popup__left {
+    width: 0%; }
+}
 .popup__right {
-  width: 66.6666667%;
+  width: 65%;
   display: table-cell;
   vertical-align: middle;
   padding: 30px 50px; }
 
+@media only screen and (max-width: 1400px) {
+  .popup__right {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 30px 50px; }
+}
 .popup__middle {
   width: 100%;
   display: table-cell; 
   vertical-align: middle;
   padding: 30px 50px; }
     
-
 .popup__img {
   display: block;
-
-
   background-size: cover;
+  height: 550px;
   width: 100%;
 }
 
@@ -430,32 +457,21 @@
   justify-content: space-between;
 }
 
-.popup__text {
+/* .popup__text {
   font-size: 18px;
   margin-bottom: 20px;
-  /* -moz-column-count: 2;
-  -moz-column-gap: 40px;
-  -moz-column-rule: 1px solid #eee;
-  column-count: 2;
-  column-gap: 40px;
-  column-rule: 1px solid #eee; */
-  /* -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;  */
-}
+} */
 
 .popup__textPoints {
   font-size: 18px;
   margin-bottom: 20px;
   list-style-type: square;
-  width:100%;
+  width: 100%;
 }
 
 ul.a {
   list-style-position: outside;
 }
-
 
 .popup__list {
   font-size: 14px;
@@ -488,10 +504,78 @@ ul.a {
   position:relative;
   display: inline-block;  
   list-style: none;
-  width:100%;
+  width: 100%;
   text-align: center;
   margin: auto;
   padding: 0;
+}
+
+.heading-secondary {
+  font-size: 50px;
+  font-weight: 700;
+  display: inline-block;
+  color: #0a2239;
+  letter-spacing: 2px;
+  transition: all .2s; 
+}
+
+@media only screen and (max-width: 800px) {
+  .popup__textPoints {
+    font-size: 14px;
+    margin-bottom: 20px;
+    list-style-type: square;
+    width: 100%;
+  }
+  .popup__listTitle {
+    font-size: 20px;
+    text-align: center !important;
+  }
+  .popup__listPoints {
+    font-size: 16px;
+    margin-bottom: 16px;
+    list-style-type: space-counter;
+    margin: 0 auto;
+  
+    position:relative;
+    display: inline-block;  
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+  }
+  .heading-secondary {
+    font-size: 36px;
+    font-weight: 700;
+    display: inline-block;
+    color: #0a2239;
+    letter-spacing: 2px;
+    transition: all .2s; 
+  }
+}
+@media only screen and (max-width: 550px) {
+  .popup__container {
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: center;
+  }
+  .popup__list {
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-right: 35px;
+    width: auto;
+    display: grid;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+  }
+  .popup__textPoints {
+    display: none; 
+  }
+  .divider2-custom .divider2-custom-line {
+    display: none; 
+  }
 }
 
 .divider2-custom {
@@ -564,15 +648,6 @@ ul.a {
 .popup__close:hover {
   color: black; }
 
-
-.heading-secondary {
-  font-size: 50px;
-  font-weight: 700;
-  display: inline-block;
-  color: #0a2239;
-  letter-spacing: 2px;
-  transition: all .2s; 
-}
 
 /* @media only screen and (max-width: 56.25em) {
   .heading-secondary {
